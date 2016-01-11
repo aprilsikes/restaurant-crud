@@ -1,0 +1,81 @@
+body{
+  font-family: Quicksand;
+}
+.newRestaurantButton{
+  float: right;
+}
+.header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  background-color: #56CD77;
+  z-index: 3;
+}
+.fa{
+  position: relative;
+  top: 20%;
+  color: black;
+  float: right;
+  bottom: 0px;
+}
+.fa-star{
+  position: absolute;
+  bottom: 0px;
+  float: none;
+  top: 0%;
+  color: yellow;
+  z-index: 4;
+}
+.title{
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.restaurants-container{
+  position: relative;
+  top: 15%;
+  width: 1024px;
+  height: 80%;
+  margin: auto;
+}
+
+.restaurants{
+  display: table-cell;
+  width: 1024px;
+  height: 100%;;
+   vertical-align: middle;
+   text-align: center;
+}
+.restaurant{
+    display: inline-block;
+    margin: 30px;
+    width: 215px;
+    height: 215px;
+    background: #e1e1e1;
+    border: 1px solid black;
+}
+img{
+  position: relative;
+  width: 132px;
+  height: 100px;
+  top: 20px;
+}
+h3{
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+}
+.restaurant p{
+  position: relative;
+  text-align: left;
+  top: 15%;
+  margin: 0px;
+  left: 0%;
+}
+.restaurant:hover{
+  cursor:pointer;
+}

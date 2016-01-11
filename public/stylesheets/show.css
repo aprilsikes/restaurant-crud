@@ -1,0 +1,20 @@
+.restaurants-container{
+  border: 1px solid black;
+}
+
+img{
+  position: relative;
+  top: 100px;
+  width: 400px;
+  height: 300px;
+}
+
+.restaurant-text{
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 0%;
+}
+.info{
+  margin-bottom: 60px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "restaurant_app",
+  "version": "1.0.0",
+  "description": "You're going to create your first project using all the skills you learned this week and from previous weeks! *All Images are provided for you in the images folder! Feel free to use your own tho!*",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "pg": "^4.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gSchool/restaurants-CRUD-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gSchool/restaurants-CRUD-project/issues"
+  },
+  "homepage": "https://github.com/gSchool/restaurants-CRUD-project#readme"
+}

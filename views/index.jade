@@ -1,0 +1,19 @@
+|<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+|<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+link(rel='stylesheet', href='stylesheets/home.css')
+body
+  div.header
+    h1.title gTables
+    h3.newRestaurantButton
+      a(href="/new") New Restaurant
+    
+  div.restaurants-container
+    div.restaurants
+      for loc in allRestaurants
+        div.restaurant(onclick="location.href='show/"+loc.id+"'")
+          h3=loc.name
+          img(src=loc.url)
+          p=loc.type
+          p=loc.location
+          p.fa !{loc.stars}    

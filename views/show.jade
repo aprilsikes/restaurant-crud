@@ -1,0 +1,22 @@
+|<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+link(rel='stylesheet', href='../stylesheets/home.css')
+link(rel='stylesheet', href='../stylesheets/show.css')
+
+div
+  div.header
+    h1.title=allRestaurants.name
+div.restaurants-container
+  img(src=allRestaurants.url, alt="")
+  div.restaurant-text
+    h2.info='type of food: ' + allRestaurants.type
+    h2.info='location: ' + allRestaurants.location
+    h2.info='description: ' + allRestaurants.description
+
+    h2.info rating: 
+      !{allRestaurants.stars}
+    
+    form(action='/edit/'+allRestaurants.id method='')
+      input.showButtons(type="submit" id="showButton1" value="edit")
+    
+    form(action='/delete/'+allRestaurants.id method='')
+      input.showButtons(type="submit" id="showButton2" value="delete")
