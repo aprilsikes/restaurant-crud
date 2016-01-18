@@ -3,6 +3,10 @@ app = express();
 var pg = require('pg');
 app.use(express.static(__dirname + '/public'));
 require('dotenv').load();
+var knex = require('../db/knex');
+// function Books() {
+//   return knex('books');
+// }
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.json());
@@ -12,7 +16,7 @@ app.set('view engine', 'jade');
 
 var router = express.Router();
 
-var connectionString = 'postgres://localhost/food';
+var connectionString = 'postgres://localhost/restaurantjs';
 
 function runQuery (query, callback) {
   pg.connect(connectionString, function (err, client, done) {
