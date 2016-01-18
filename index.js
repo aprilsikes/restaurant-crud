@@ -2,7 +2,7 @@ var express = require('express');
 app = express();
 var pg = require('pg');
 app.use(express.static(__dirname + '/public'));
-require('dotenv').load();
+// require('dotenv').load();
 var knex = require('../db/knex');
 // function Books() {
 //   return knex('books');
